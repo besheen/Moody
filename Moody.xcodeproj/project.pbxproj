@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		C31348D928A4A82000C5D485 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31348D828A4A82000C5D485 /* AppDelegate.swift */; };
-		C31348DB28A4A82000C5D485 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31348DA28A4A82000C5D485 /* SceneDelegate.swift */; };
-		C31348DD28A4A82000C5D485 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31348DC28A4A82000C5D485 /* ViewController.swift */; };
-		C31348E028A4A82000C5D485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31348DE28A4A82000C5D485 /* Main.storyboard */; };
 		C31348E228A4A82100C5D485 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31348E128A4A82100C5D485 /* Assets.xcassets */; };
 		C31348E528A4A82100C5D485 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31348E328A4A82100C5D485 /* LaunchScreen.storyboard */; };
+		C31348F028A4E3F300C5D485 /* Moody.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C31348EE28A4E3F300C5D485 /* Moody.xcdatamodeld */; };
+		C31348F328A4ED1900C5D485 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31348F228A4ED1900C5D485 /* Mood.swift */; };
+		C31348F528A4F12300C5D485 /* MoodyStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31348F428A4F12300C5D485 /* MoodyStack.swift */; };
+		C31348F828A4F3E400C5D485 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31348F728A4F3E400C5D485 /* RootViewController.swift */; };
+		C31348FB28A4FC2000C5D485 /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31348FA28A4FC2000C5D485 /* Managed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C31348D528A4A82000C5D485 /* Moody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moody.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31348D828A4A82000C5D485 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C31348DA28A4A82000C5D485 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C31348DC28A4A82000C5D485 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C31348DF28A4A82000C5D485 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C31348E128A4A82100C5D485 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C31348E428A4A82100C5D485 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C31348E628A4A82100C5D485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C31348EF28A4E3F300C5D485 /* Moody.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Moody.xcdatamodel; sourceTree = "<group>"; };
+		C31348F228A4ED1900C5D485 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		C31348F428A4F12300C5D485 /* MoodyStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyStack.swift; sourceTree = "<group>"; };
+		C31348F728A4F3E400C5D485 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		C31348FA28A4FC2000C5D485 /* Managed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		C31348D728A4A82000C5D485 /* Moody */ = {
 			isa = PBXGroup;
 			children = (
+				C31348F928A4FBFB00C5D485 /* Core Data Helpers */,
+				C31348F128A4ECF000C5D485 /* Model */,
+				C31348F628A4F3CB00C5D485 /* ViewControllers */,
 				C31348D828A4A82000C5D485 /* AppDelegate.swift */,
-				C31348DA28A4A82000C5D485 /* SceneDelegate.swift */,
-				C31348DC28A4A82000C5D485 /* ViewController.swift */,
-				C31348DE28A4A82000C5D485 /* Main.storyboard */,
-				C31348E128A4A82100C5D485 /* Assets.xcassets */,
 				C31348E328A4A82100C5D485 /* LaunchScreen.storyboard */,
+				C31348E128A4A82100C5D485 /* Assets.xcassets */,
 				C31348E628A4A82100C5D485 /* Info.plist */,
 			);
 			path = Moody;
+			sourceTree = "<group>";
+		};
+		C31348F128A4ECF000C5D485 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C31348EE28A4E3F300C5D485 /* Moody.xcdatamodeld */,
+				C31348F228A4ED1900C5D485 /* Mood.swift */,
+				C31348F428A4F12300C5D485 /* MoodyStack.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C31348F628A4F3CB00C5D485 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C31348F728A4F3E400C5D485 /* RootViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C31348F928A4FBFB00C5D485 /* Core Data Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C31348FA28A4FC2000C5D485 /* Managed.swift */,
+			);
+			path = "Core Data Helpers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +157,6 @@
 			files = (
 				C31348E528A4A82100C5D485 /* LaunchScreen.storyboard in Resources */,
 				C31348E228A4A82100C5D485 /* Assets.xcassets in Resources */,
-				C31348E028A4A82000C5D485 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +167,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C31348DD28A4A82000C5D485 /* ViewController.swift in Sources */,
+				C31348F828A4F3E400C5D485 /* RootViewController.swift in Sources */,
+				C31348FB28A4FC2000C5D485 /* Managed.swift in Sources */,
+				C31348F028A4E3F300C5D485 /* Moody.xcdatamodeld in Sources */,
+				C31348F528A4F12300C5D485 /* MoodyStack.swift in Sources */,
+				C31348F328A4ED1900C5D485 /* Mood.swift in Sources */,
 				C31348D928A4A82000C5D485 /* AppDelegate.swift in Sources */,
-				C31348DB28A4A82000C5D485 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C31348DE28A4A82000C5D485 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C31348DF28A4A82000C5D485 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C31348E328A4A82100C5D485 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +318,6 @@
 				INFOPLIST_FILE = Moody/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -307,7 +330,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,7 +346,6 @@
 				INFOPLIST_FILE = Moody/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -336,7 +358,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -362,6 +384,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C31348EE28A4E3F300C5D485 /* Moody.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C31348EF28A4E3F300C5D485 /* Moody.xcdatamodel */,
+			);
+			currentVersion = C31348EF28A4E3F300C5D485 /* Moody.xcdatamodel */;
+			path = Moody.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C31348CD28A4A82000C5D485 /* Project object */;
 }
