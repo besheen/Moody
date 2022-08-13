@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Moody
 //
-//  Created by Carl on 2022/8/11.
+//  Created by Wendell on 2022/8/13.
 //
 
 import UIKit
@@ -30,9 +30,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.rootViewController = UIViewController()
         window?.makeKeyAndVisible()
+        
         return true
     }
-    
+
     func applicationWillEnterForeground(_ application: UIApplication) {
         
     }
@@ -49,4 +50,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
 }
+
 
