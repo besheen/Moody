@@ -3,18 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		071922B728A7520B00A9B048 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071922B628A7520B00A9B048 /* AppDelegate.swift */; };
 		071922C028A7520D00A9B048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071922BF28A7520D00A9B048 /* Assets.xcassets */; };
 		071922C328A7520D00A9B048 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 071922C128A7520D00A9B048 /* LaunchScreen.storyboard */; };
-		071922D328A754FB00A9B048 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071922CB28A754FB00A9B048 /* RootViewController.swift */; };
 		071922D528A754FB00A9B048 /* MoodyStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071922CF28A754FB00A9B048 /* MoodyStack.swift */; };
 		071922D628A754FB00A9B048 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071922D028A754FB00A9B048 /* Mood.swift */; };
 		071922D728A754FB00A9B048 /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071922D228A754FB00A9B048 /* Managed.swift */; };
 		071922DA28A7556800A9B048 /* Moody.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 071922D828A7556800A9B048 /* Moody.xcdatamodeld */; };
+		C364B18A28A9ED580040BACA /* MoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B18928A9ED580040BACA /* MoodListViewController.swift */; };
+		C364B18C28A9ED610040BACA /* MoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B18B28A9ED610040BACA /* MoodDetailViewController.swift */; };
+		C364B18E28A9ED8D0040BACA /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B18D28A9ED8D0040BACA /* CameraViewController.swift */; };
+		C364B19428AA29BD0040BACA /* MoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B19328AA29BD0040BACA /* MoodTableViewCell.swift */; };
+		C364B19628AA2AF50040BACA /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B19528AA2AF50040BACA /* TableViewDataSource.swift */; };
+		C364B19B28AA4A5D0040BACA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B19A28AA4A5D0040BACA /* Utilities.swift */; };
+		C364B1A228AB2EB00040BACA /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B1A128AB2EB00040BACA /* NSManagedObjectContext+Extensions.swift */; };
+		C364B1F428AB6EFD0040BACA /* CaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B1F328AB6EFD0040BACA /* CaptureSession.swift */; };
+		C364B20228ACC6990040BACA /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B20128ACC6990040BACA /* RootViewController.swift */; };
+		C364B20828ADC6190040BACA /* NSManagedObjectContext+Observers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B20728ADC6190040BACA /* NSManagedObjectContext+Observers.swift */; };
+		C364B20A28ADCAB60040BACA /* ManagedObjectObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B20928ADCAB60040BACA /* ManagedObjectObserver.swift */; };
+		C364B20C28ADD90E0040BACA /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B20B28ADD90E0040BACA /* Country.swift */; };
+		C364B20E28ADD91D0040BACA /* Continent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B20D28ADD91D0040BACA /* Continent.swift */; };
+		C364B21028ADD9960040BACA /* ISO3166.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B20F28ADD9960040BACA /* ISO3166.swift */; };
+		C364B21328ADDA1C0040BACA /* LocalizedStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B21228ADDA1C0040BACA /* LocalizedStringConvertible.swift */; };
+		C364B21528ADE7F00040BACA /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B21428ADE7F00040BACA /* Region.swift */; };
+		C364B22828AF39F60040BACA /* RegionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B22728AF39F60040BACA /* RegionsViewController.swift */; };
+		C364B22A28AF3F9E0040BACA /* GeoLocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C364B22928AF3F9E0040BACA /* GeoLocationHelper.swift */; };
 		CD10F7BD5FB0F12217D7FE49 /* Pods_Moody.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E073DB832E3A396E7A70CC08 /* Pods_Moody.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,13 +41,30 @@
 		071922BF28A7520D00A9B048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		071922C228A7520D00A9B048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		071922C428A7520D00A9B048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		071922CB28A754FB00A9B048 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		071922CF28A754FB00A9B048 /* MoodyStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodyStack.swift; sourceTree = "<group>"; };
 		071922D028A754FB00A9B048 /* Mood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		071922D228A754FB00A9B048 /* Managed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Managed.swift; sourceTree = "<group>"; };
 		071922D928A7556800A9B048 /* Moody.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Moody.xcdatamodel; sourceTree = "<group>"; };
 		9B586D353727C0ACDBE6BD5B /* Pods-Moody.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moody.debug.xcconfig"; path = "Target Support Files/Pods-Moody/Pods-Moody.debug.xcconfig"; sourceTree = "<group>"; };
 		A6F287D0491D4DA2E7BD33DF /* Pods-Moody.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moody.release.xcconfig"; path = "Target Support Files/Pods-Moody/Pods-Moody.release.xcconfig"; sourceTree = "<group>"; };
+		C364B18928A9ED580040BACA /* MoodListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodListViewController.swift; sourceTree = "<group>"; };
+		C364B18B28A9ED610040BACA /* MoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDetailViewController.swift; sourceTree = "<group>"; };
+		C364B18D28A9ED8D0040BACA /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		C364B19328AA29BD0040BACA /* MoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTableViewCell.swift; sourceTree = "<group>"; };
+		C364B19528AA2AF50040BACA /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		C364B19A28AA4A5D0040BACA /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		C364B1A128AB2EB00040BACA /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
+		C364B1F328AB6EFD0040BACA /* CaptureSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSession.swift; sourceTree = "<group>"; };
+		C364B20128ACC6990040BACA /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		C364B20728ADC6190040BACA /* NSManagedObjectContext+Observers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Observers.swift"; sourceTree = "<group>"; };
+		C364B20928ADCAB60040BACA /* ManagedObjectObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectObserver.swift; sourceTree = "<group>"; };
+		C364B20B28ADD90E0040BACA /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		C364B20D28ADD91D0040BACA /* Continent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continent.swift; sourceTree = "<group>"; };
+		C364B20F28ADD9960040BACA /* ISO3166.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO3166.swift; sourceTree = "<group>"; };
+		C364B21228ADDA1C0040BACA /* LocalizedStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStringConvertible.swift; sourceTree = "<group>"; };
+		C364B21428ADE7F00040BACA /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		C364B22728AF39F60040BACA /* RegionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsViewController.swift; sourceTree = "<group>"; };
+		C364B22928AF3F9E0040BACA /* GeoLocationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocationHelper.swift; sourceTree = "<group>"; };
 		E073DB832E3A396E7A70CC08 /* Pods_Moody.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moody.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,6 +101,9 @@
 		071922B528A7520B00A9B048 /* Moody */ = {
 			isa = PBXGroup;
 			children = (
+				C364B21128ADD9F30040BACA /* Localization */,
+				C364B19928AA4A4E0040BACA /* Helpers */,
+				C364B19228AA29A30040BACA /* Views */,
 				071922CC28A754FB00A9B048 /* Model */,
 				071922CA28A754FB00A9B048 /* ViewControllers */,
 				071922D128A754FB00A9B048 /* Core Data Helpers */,
@@ -81,7 +118,11 @@
 		071922CA28A754FB00A9B048 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				071922CB28A754FB00A9B048 /* RootViewController.swift */,
+				C364B20128ACC6990040BACA /* RootViewController.swift */,
+				C364B18928A9ED580040BACA /* MoodListViewController.swift */,
+				C364B18B28A9ED610040BACA /* MoodDetailViewController.swift */,
+				C364B18D28A9ED8D0040BACA /* CameraViewController.swift */,
+				C364B22728AF39F60040BACA /* RegionsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -92,6 +133,10 @@
 				071922D828A7556800A9B048 /* Moody.xcdatamodeld */,
 				071922CF28A754FB00A9B048 /* MoodyStack.swift */,
 				071922D028A754FB00A9B048 /* Mood.swift */,
+				C364B20B28ADD90E0040BACA /* Country.swift */,
+				C364B20D28ADD91D0040BACA /* Continent.swift */,
+				C364B21428ADE7F00040BACA /* Region.swift */,
+				C364B20F28ADD9960040BACA /* ISO3166.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,8 +145,38 @@
 			isa = PBXGroup;
 			children = (
 				071922D228A754FB00A9B048 /* Managed.swift */,
+				C364B19528AA2AF50040BACA /* TableViewDataSource.swift */,
+				C364B1A128AB2EB00040BACA /* NSManagedObjectContext+Extensions.swift */,
+				C364B20728ADC6190040BACA /* NSManagedObjectContext+Observers.swift */,
+				C364B20928ADCAB60040BACA /* ManagedObjectObserver.swift */,
 			);
 			path = "Core Data Helpers";
+			sourceTree = "<group>";
+		};
+		C364B19228AA29A30040BACA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C364B19328AA29BD0040BACA /* MoodTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C364B19928AA4A4E0040BACA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C364B19A28AA4A5D0040BACA /* Utilities.swift */,
+				C364B1F328AB6EFD0040BACA /* CaptureSession.swift */,
+				C364B22928AF3F9E0040BACA /* GeoLocationHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C364B21128ADD9F30040BACA /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				C364B21228ADDA1C0040BACA /* LocalizedStringConvertible.swift */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 		D7D2E95D5915A98EBF7956FD /* Pods */ = {
@@ -110,7 +185,6 @@
 				9B586D353727C0ACDBE6BD5B /* Pods-Moody.debug.xcconfig */,
 				A6F287D0491D4DA2E7BD33DF /* Pods-Moody.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -236,11 +310,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				071922D628A754FB00A9B048 /* Mood.swift in Sources */,
+				C364B20828ADC6190040BACA /* NSManagedObjectContext+Observers.swift in Sources */,
+				C364B20A28ADCAB60040BACA /* ManagedObjectObserver.swift in Sources */,
+				C364B18A28A9ED580040BACA /* MoodListViewController.swift in Sources */,
+				C364B18C28A9ED610040BACA /* MoodDetailViewController.swift in Sources */,
+				C364B1F428AB6EFD0040BACA /* CaptureSession.swift in Sources */,
+				C364B1A228AB2EB00040BACA /* NSManagedObjectContext+Extensions.swift in Sources */,
+				C364B21028ADD9960040BACA /* ISO3166.swift in Sources */,
+				C364B22A28AF3F9E0040BACA /* GeoLocationHelper.swift in Sources */,
+				C364B21328ADDA1C0040BACA /* LocalizedStringConvertible.swift in Sources */,
+				C364B19428AA29BD0040BACA /* MoodTableViewCell.swift in Sources */,
 				071922D728A754FB00A9B048 /* Managed.swift in Sources */,
-				071922D328A754FB00A9B048 /* RootViewController.swift in Sources */,
+				C364B20C28ADD90E0040BACA /* Country.swift in Sources */,
+				C364B19B28AA4A5D0040BACA /* Utilities.swift in Sources */,
 				071922D528A754FB00A9B048 /* MoodyStack.swift in Sources */,
+				C364B22828AF39F60040BACA /* RegionsViewController.swift in Sources */,
+				C364B19628AA2AF50040BACA /* TableViewDataSource.swift in Sources */,
+				C364B20228ACC6990040BACA /* RootViewController.swift in Sources */,
+				C364B20E28ADD91D0040BACA /* Continent.swift in Sources */,
 				071922DA28A7556800A9B048 /* Moody.xcdatamodeld in Sources */,
+				C364B21528ADE7F00040BACA /* Region.swift in Sources */,
 				071922B728A7520B00A9B048 /* AppDelegate.swift in Sources */,
+				C364B18E28A9ED8D0040BACA /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

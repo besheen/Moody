@@ -21,11 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         createMoodyContainer { container in
             self.persistentContainer = container
             
-            let rootViewController = RootViewController()
-            rootViewController.navigationItem.title = "Moody"
-            rootViewController.managedObjectContext = container.viewContext
+            let rootController = RootViewController()
+            rootController.managedObjectContext = container.viewContext
             
-            self.window?.rootViewController = UINavigationController(rootViewController: rootViewController)
+            self.window?.rootViewController = UINavigationController(rootViewController: rootController)
         }
         
         window?.rootViewController = UIViewController()
